@@ -35,15 +35,6 @@ nav {
     border-radius: 15px;
 }
 
-article {
-    background-color: #474A48;
-    padding: 20px;
-    width: 90%;
-    max-width: 1660px;
-    height: 780px;
-    border-radius: 15px;
-}
-
 footer {
     background-color: #6d597a;
     width: 100%;
@@ -58,6 +49,15 @@ footer {
 p {
     text-align: center;
     vertical-align: middle;
+}
+
+.divPrincipal {
+    background-color: #474A48;
+    padding: 20px;
+    width: 90%;
+    max-width: 1660px;
+    height: 780px;
+    border-radius: 15px;
 }
 
 .icon {
@@ -119,32 +119,28 @@ p {
     height: 15%;
 }
 
-.article-flex {
+.divPrincipal-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.article-flex-son {
-    display: flex;
+.divPrincipal-flex-son {
     width: 100%;
 }
 
-.article-flex2-son {
-    display: flex;
+.divPrincipal-flex2-son {
     width: 20%;
     height: 30%;
 }
 
-.article-flex3-son {
-    display: flex;
+.divPrincipal-flex3-son {
     width: 20%;
     height: 30%;
 }
 
-.article-flex4-son {
-    display: flex;
+.divPrincipal-flex4-son {
     width: 60%;
     height: 30%;
 }
@@ -152,4 +148,25 @@ p {
 .imageindex {
     max-width: 100%;
     max-height: 100%;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+  /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
